@@ -1,0 +1,15 @@
+# Elixir / Erlang
+_build/
+deps/
+*.beam
+.fetch
+erl_crash.dump
+*.ez
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs
+*.log

@@ -1,0 +1,46 @@
+================================================================================
+           OBSERVATORIO SISMOLÓGICO DE LA UNIVERSIDAD DEL QUINDÍO
+                        REPORTE GENERAL DE SISMOS
+================================================================================
+
+DETALLE POR CIUDAD:
+--------------------------------------------------------------------------------
+Ciudad: Armenia (ID: C01)
+Número de habitantes: 304314
+Movimientos registrados:
+  * Código: S001 | Inicio: 08:15:02 | Fin: 08:15:18 | Magnitud: 3.4 | Profundidad: 18.0 km
+  * Código: S003 | Inicio: 11:42:00 | Fin: 11:42:12 | Magnitud: 2.8 | Profundidad: 10.0 km
+Cantidad total de movimientos: 2
+Movimiento de mayor magnitud: S001 · 3.4
+Profundidad promedio: 14.00 km
+
+Ciudad: Calarcá (ID: C02)
+Número de habitantes: 78684
+Movimientos registrados:
+  * Código: S002 | Inicio: 09:30:10 | Fin: 09:30:29 | Magnitud: 4.1 | Profundidad: 25.0 km
+Cantidad total de movimientos: 1
+Movimiento de mayor magnitud: S002 · 4.1
+Profundidad promedio: 25.00 km
+
+Ciudad: Circasia (ID: C03)
+Número de habitantes: 30941
+Movimientos registrados:
+  Sin movimientos registrados
+Cantidad total de movimientos: 0
+Movimiento de mayor magnitud: No aplica
+Profundidad promedio: No aplica
+
+--------------------------------------------------------------------------------
+RESUMEN GENERAL:
+--------------------------------------------------------------------------------
+Ciudad         Movimientos    Movimiento de mayor magnitud    Profundidad promedio
+--------------------------------------------------------------------------------
+Armenia        2              S001 · 3.4                      14.00 km
+Calarcá        1              S002 · 4.1                      25.00 km
+Circasia       0              No aplica                       No aplica
+
+--------------------------------------------------------------------------------
+REGISTROS RECHAZADOS:
+- Archivo de ciudades (ciudades.txt): 0 registro(s) rechazado(s)
+- Archivo de movimientos (movimientos.txt): 0 registro(s) rechazado(s)
+================================================================================
