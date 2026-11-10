@@ -253,24 +253,4 @@ Se utilizó el asistente **Antigravity (Google DeepMind)** con el modelo **Gemin
 - **Qué se cambiaría en un siguiente proyecto:**
   - Empaquetar la solución utilizando un proyecto `Mix` con pruebas automatizadas (`ExUnit`) y supervisores (`Supervisor` y `GenServer`) para dotar a los procesos de tolerancia a fallos y reinicio automático en caso de caída inesperada.
 
----
 
-## 6. Guía Rápida para la Sustentación Oral (Preguntas Clave del Docente)
-
-Si durante la sustentación el docente solicita explicaciones o modificaciones en vivo:
-
-1. **¿Dónde está la recursividad explícita?**
-   - En [punto-1/calculador.exs](file:///c:/Users/juanc/OneDrive/Documentos/Parcial2Programacion3/punto-1/calculador.exs#L41-L98) en la función privada `calcular_recursivo/4`.
-   - Se muestra cómo recorre `[mov | resto]`, acumulando `cantidad + 1`, seleccionando el mayor con `mov.magnitud > mayor_mov.magnitud` y acumulando `suma_profundidades + mov.profundidad`.
-
-2. **¿Cómo se asegura que las respuestas del coordinador se aceptan en cualquier orden?**
-   - En [punto-1/coordinador.exs](file:///c:/Users/juanc/OneDrive/Documentos/Parcial2Programacion3/punto-1/coordinador.exs#L71-L91) en `esperar_trabajadores/2`.
-   - Si llega `{:archivo_ciudades, res}` primero, guarda ese resultado y espera `{:archivo_movimientos, res}`, y viceversa.
-
-3. **¿Cómo se conservan los datos si falla la lectura de un archivo?**
-   - En el `case {res_ciudades, res_movimientos}` de [coordinador.exs](file:///c:/Users/juanc/OneDrive/Documentos/Parcial2Programacion3/punto-1/coordinador.exs#L35-L53).
-   - Si alguna tupla es `{:error, ...}`, imprime el mensaje de error indicando cuál archivo falló y retorna de inmediato sin escribir en el archivo de reporte.
-
-4. **¿Por qué el servidor del Punto 2 no se apaga al responder `:fin`?**
-   - En [punto-2/nodo-servidor/servidor.exs](file:///c:/Users/juanc/OneDrive/Documentos/Parcial2Programacion3/punto-2/nodo-servidor/servidor.exs#L55-L60).
-   - Al hacer matching de `{destino_respuesta, :fin}`, envía `send(destino_respuesta, :fin)` y acto seguido realiza la llamada recursiva `bucle_servicio(ruta_ciudades, ruta_movimientos)`.
